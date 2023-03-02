@@ -1,0 +1,360 @@
+.navbar-dark .navbar-nav .nav-link {
+    color: #3d3d3d;
+}
+a.nav-link:hover {
+    color: #752212!important;
+}
+.navbar-dark .navbar-text a {
+    color: #9f938a;
+}
+.header-socials a {
+    width: 38px;
+    height: 38px;
+    background-color: transparent;
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 33px !important;
+    border: 2px solid #9f938a;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+a.custom_btn {
+    color: #3d3d3d;
+    font-weight: 700;
+    background-color: #fff;
+    border-color: #fff;
+    padding: 10px 50px;
+}
+
+.container.about_me {
+    padding: 0 150px;
+}
+.container.class_item {
+    padding: 0 150px;
+}
+.about_me img {
+    margin-top: -200px;
+}
+
+.about_me h3{
+    font-family: Cormorant;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 26px;
+    letter-spacing: .02em;
+    line-height: 1.3em;
+    text-transform: none;
+    color: #666963;
+}
+
+p{  
+    color: #3d3d3d;
+}
+
+a.read_more_btn {
+    color: #b8846e;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+}
+
+h2 strong {
+    font-family: portraitscript;
+    font-weight: 300;
+    line-height: 2em;
+    padding-bottom: 20px;
+    background: linear-gradient(to right,#3d3d3d,#3d3d3d) no-repeat;
+    background-size: 100px 1px;
+    background-position: center bottom;
+}
+
+.service_inner img {
+    width: 100%;
+}
+
+.service_details{
+    text-align: center;
+    background: #DFC2B2;
+    padding: 18px;
+    color: #fff!important;
+}
+
+.service_inner p{
+    color: #fff!important;
+}
+.service_inner h3{
+    color: #3d3d3d!important;
+}
+
+footer#footer-2 {
+    background: #DFC2B2;
+}
+.btn-theme {
+    background-color: #DFC2B2;
+    border: 2px solid #DFC2B2;
+}
+
+img.m_slider {
+    display: none;
+}
+img.about_m {
+    display: none;
+}
+.blog-post-txt1 {
+    text-align: center;
+    margin-top: 10px;
+}
+h5.h5-sm {
+    font-family: cormorant;
+    font-style: italic !important;
+    font-size: 23px;
+    color: #737373;
+    font-weight: normal;
+}
+.blog-post-img img {
+    height: 300px;
+    width: 100%;
+}
+section#blog-1 {
+    margin-top: -200px;
+}
+
+.col-xs-6 {
+    width: 50%;
+}
+.forth_blog{
+    display: none;
+}
+
+.service_inner img {
+    height: 350px!important;
+}
+h3.title {
+    font-weight: normal;
+} 
+.class_item h3 {
+    color: #bbb;
+    font-weight: normal;
+    margin-top: 10px;
+    font-family: Cormorant;
+    font-weight: 300;
+    letter-spacing: .02em;
+    line-height: 1.3em;
+    text-transform: none;
+    font-size: 34px;
+}
+.class_item h4 {
+    color: #bbb;
+    font-weight: normal;
+}
+.testimonial_class h4{
+    padding-top: 18px;
+    border-left: none;
+    font-family: cormorant;
+    font-style: italic;
+    color: #3d3d3d;
+    line-height: 1.5em;
+}
+.testimonial_class {
+    padding: 0 100px;
+}
+form.form-inline {
+    margin-left: 20%;
+}
+
+select.form-control.blog_search {
+    width: 32%;
+    float: left;
+    margin: 7px;
+}
+input#keyword {
+    width: 32%;
+    float: left;
+    margin: 7px;
+}
+
+img.class_item {
+    height: 500px;
+}
+img.blog_item {
+    height: 300px;
+}
+
+.blog_inner {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.blog_inner h3 {
+    font-family: Cormorant;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 0em;
+    line-height: 1.3em;
+    text-transform: none;
+    text-decoration: none;
+    color: #535555;
+}
+
+.blog_inner h4 {
+    font-family: Cormorant;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: 0em;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #794a70;
+}
+img.class_slider {
+    display: none;
+}
+img.blog_item {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .wide-60 {
+        padding-top: 10px;
+        padding-bottom: 6px;
+    }
+    img.class_2 {
+        display: none!important;
+    }
+    img.class_2_m {
+        display: block!important;
+    }
+    img.class_item {
+        margin-top: 50px;
+    }
+    a.custom_btn {
+        color: #3d3d3d;
+        font-weight: 700;
+        background-color: #fff;
+        border-color: #fff;
+        padding: 10px 50px;
+    }
+   
+    #hero-5-txt {        
+        padding-top: 200px;
+        padding-bottom: 320px;
+        background: #f2d4ee;
+    }
+    select.form-control.blog_search {
+        width: 100%;
+    }
+    input#keyword {
+        width: 100%;
+    }
+    img.m_slider {
+        height: 275px!important;
+    }
+    form.form-inline {
+        margin-left: 1%;
+    }
+   
+    .class_item h3 {
+        margin-top: 10px!important;
+    }
+    h4.quote {
+        color: #3d3d3d;
+        line-height: 1.2em;
+        font-size: 2em;
+        margin-top: -100px;
+        text-align: center;
+        font-weight: 500;
+    }
+    .container.testimonial_class img {
+        width: 80%;
+        height: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testimonial_class {
+        padding: 0 10px;
+        min-height: 300px;
+    }
+    .container.class_item {
+        padding: 0 10px;
+    }
+    #hero-5-txt {
+        padding-top: 100px;
+        padding-bottom: 0px;
+    }
+    .service_inner {
+        margin-top: 35px;
+    }
+    img.services {
+        width: 100%!important;
+    }
+    img.resources {
+        width: 100%;
+        margin-top: -24px!important;
+    }   
+
+    .forth_blog{
+        display: block;
+    }
+    h1.h3-lg.wow.fadeInUp {
+        font-size: 27px!important;
+    }
+
+    .container.about_me {
+        padding: 0 50px!important;
+    }
+
+    section#logos img {
+        width: 100%;
+        height: 54px;
+    }
+    footer#footer-2 {
+        text-align: center;
+    }
+    .footer-form.mb-20 {
+        display: none;
+    }
+    a.navbar-brand.logo-black {
+        width: 200px;
+        height: 43px;
+    }
+    img.m_slider {
+        width: 104%;
+        display: block;
+        height: 400px!important;
+        margin-top: -62px;
+        margin-left: -6px;
+    }
+    img.class_slider {
+        width: 104%;
+        display: block;
+        height: 250px!important;
+        margin-top: -62px;
+        margin-left: -6px;
+    }
+
+    #hero-4-txt {
+        background-image: url(../images/hero-4.jpg);
+        padding-bottom: 60px;
+    }
+
+    img.about_m {
+        width: 80%!important;
+        display: block!important;
+        margin: -100px 40px 0px 40px!important;
+    }
+    img.about_d {
+        display: none!important;
+    }
+    .blog-post-img img {
+        height: 169px;
+    }
+    .blog-post-txt1 {
+        margin-bottom: 25px;
+    }
+
+  }

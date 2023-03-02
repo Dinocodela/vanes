@@ -1,0 +1,19 @@
+.aside-header.align-self-start.mt-1.mt-lg-5.text-right.d-style {
+    display: none;
+}
+button.btn.radius-round.btn-outline-primary.border-2.btn-sm.ml-2 {
+    display: none;
+}
+a.btn.btn-default.px-3.text-95.radius-round.border-2.brc-black-tp10.float-left {
+    width: 100%;
+}
+h3.message_title{
+    border: 1px solid grey; padding:5px 20px; display:inline;
+    text-align: center;
+}
+div#emailOption,div#voiceOption,div#smsOption {
+    margin-top: 50px;
+}
+a.active_option{
+background-color: green;
+}
