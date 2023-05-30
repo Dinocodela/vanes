@@ -262,10 +262,9 @@
 				<div class="container">
 					<div class="cta-2-box">
 						<div class="row d-flex align-items-center">
-							
 							<!-- CALL TO ACTION TEXT -->
 							<div class="col-lg-2"></div>
-							<div class="col-lg-8">
+							{{-- <div class="col-lg-8">
 								<div class="cta-txt"  style="text-align: center">
 								    
 								    <div id="messageLead"></div>
@@ -290,9 +289,13 @@
 
 								
 
+							</div> --}}
+
+							<div class="col-lg-8">
+								<div class="cta-txt"  style="text-align: center">
+									<img src="{{ URL::asset('frontend/images/popup.png') }}" alt="">
+							    </div>
 							</div>
-
-
 
 
 						</div>	 <!-- End row -->

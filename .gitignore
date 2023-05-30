@@ -3,7 +3,7 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-
+.env
 *.sublime-project
 *.sublime-workspace
 /.idea
@@ -13,3 +13,4 @@ error_log
 .DS_Store
 sitemap.xml
 app/Http/Controllers/Front/Auth/RegisterController.php
+resources/views/home.blade.php

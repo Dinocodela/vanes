@@ -1,11 +1,5 @@
 <?php
 
-/**
- * @see       https://github.com/laminas/laminas-code for the canonical source repository
- * @copyright https://github.com/laminas/laminas-code/blob/master/COPYRIGHT.md
- * @license   https://github.com/laminas/laminas-code/blob/master/LICENSE.md New BSD License
- */
-
 namespace Laminas\Code\Generator;
 
 use Laminas\Code\DeclareStatement;
@@ -45,38 +39,36 @@ use const T_WHITESPACE;
 
 class FileGenerator extends AbstractGenerator
 {
-    /** @var string */
-    protected $filename;
+    protected string $filename = '';
 
-    /** @var DocBlockGenerator */
-    protected $docBlock;
+    protected ?DocBlockGenerator $docBlock = null;
 
-    /** @var array */
-    protected $requiredFiles = [];
+    /** @var string[] */
+    protected array $requiredFiles = [];
 
-    /** @var string */
-    protected $namespace;
-    /**
-     * @var array
-     * @psalm-var list<array{string, string|null}>
-     */
-    protected $uses = [];
+    protected string $namespace = '';
+
+    /** @psalm-var list<array{string, string|null}> */
+    protected array $uses = [];
+
     /**
      * @var ClassGenerator[]
      * @psalm-var array<string, ClassGenerator>
      */
-    protected $classes = [];
+    protected array $classes = [];
 
-    /** @var string */
-    protected $body;
+    protected string $body = '';
 
-    /** @var DeclareStatement[] */
-    protected $declares = [];
+    /**
+     * @var DeclareStatement[]
+     * @psalm-var array<string, DeclareStatement>
+     */
+    protected array $declares = [];
 
     /**
      * Passes $options to {@link setOptions()}.
      *
-     * @param array|Traversable $options
+     * @param array|Traversable|null $options
      */
     public function __construct($options = null)
     {
@@ -108,9 +100,10 @@ class FileGenerator extends AbstractGenerator
                     $fileGenerator->setRequiredFiles($value);
                     break;
                 case 'declares':
-                    $fileGenerator->setDeclares(array_map(static function ($directive, $value) {
-                        return DeclareStatement::fromArray([$directive => $value]);
-                    }, array_keys($value), $value));
+                    $fileGenerator->setDeclares(
+                        array_map(static fn($directive, $value) =>
+                            DeclareStatement::fromArray([$directive => $value]), array_keys($value), $value)
+                    );
                     break;
                 default:
                     if (property_exists($fileGenerator, $name)) {
@@ -150,7 +143,7 @@ class FileGenerator extends AbstractGenerator
     }
 
     /**
-     * @return DocBlockGenerator
+     * @return ?DocBlockGenerator
      */
     public function getDocBlock()
     {
@@ -158,7 +151,7 @@ class FileGenerator extends AbstractGenerator
     }
 
     /**
-     * @param  array $requiredFiles
+     * @param  string[] $requiredFiles
      * @return FileGenerator
      */
     public function setRequiredFiles(array $requiredFiles)
@@ -168,7 +161,7 @@ class FileGenerator extends AbstractGenerator
     }
 
     /**
-     * @return array
+     * @return string[]
      */
     public function getRequiredFiles()
     {
@@ -258,7 +251,7 @@ class FileGenerator extends AbstractGenerator
     }
 
     /**
-     * @param  array $classes
+     * @param  array[]|string[]|ClassGenerator[] $classes
      * @return FileGenerator
      */
     public function setClasses(array $classes)
@@ -364,7 +357,10 @@ class FileGenerator extends AbstractGenerator
         return $this->body;
     }
 
-    /** @return static */
+    /**
+     * @param DeclareStatement[] $declares
+     * @return static
+     */
     public function setDeclares(array $declares)
     {
         foreach ($declares as $declare) {
@@ -409,7 +405,7 @@ class FileGenerator extends AbstractGenerator
     public function generate()
     {
         if ($this->isSourceDirty() === false) {
-            return $this->sourceContent;
+            return $this->sourceContent ?? '';
         }
 
         $output = '';

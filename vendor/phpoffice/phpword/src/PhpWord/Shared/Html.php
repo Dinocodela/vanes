@@ -326,15 +326,8 @@ class Html
         if (count($cNodes) > 0) {
             $text = '';
             foreach ($cNodes as $cNode) {
-                // at least do not silently swallow any formatted text in lists
-                $types = array('#text', 'strong', 'em', 'span');
-                if (in_array($cNode->nodeName, $types)) {
-                    $text .= $cNode->nodeValue;
-                }
-
-                //ideally we should be parsing child nodes for any style, for now just take the text
-                if ('' == trim($text) && '' != trim($node->textContent)) {
-                    $text .= trim($node->textContent);
+                if ($cNode->nodeName == '#text') {
+                    $text = $cNode->nodeValue;
                 }
             }
             $element->addListItem($text, $data['listdepth'], $styles['font'], $styles['list'], $styles['paragraph']);
