@@ -220,7 +220,7 @@
 									<h4 class="h4-md">Grab Your Free Sound Bath Meditation App Now</h4>
 
 									<!-- Text -->
-									<p class="p-md">You were put on this earth to achieve your greatest self, to live out your purpose, and to do it courageously. Are you ready to step into your greatness?
+									<p class="p-md">You were put on this earth to achieve your greatest self, to live out your purpose, and to do it courageously. Are you ready to step into your greatness? 
 									</p>
 
 								</div>
